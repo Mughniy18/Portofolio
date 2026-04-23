@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athiyyah Mughniy Al Ghifary | Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .nav-link {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-dark-navy { background-color: #001f3f; }
+        .text-accent { color: #2ecc71; }
+        .bg-accent { background-color: #2ecc71; }
+        
+        /* Mobile Menu Styles */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+        }
+        #mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .section-padding {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full bg-dark-navy text-white z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold tracking-tighter">ATHIYYAH<span class="text-accent">.</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="nav-link hover:text-accent transition duration-300">Beranda</a>
+                    <a href="#profil" class="nav-link hover:text-accent transition duration-300">Profil</a>
+                    <a href="#keahlian" class="nav-link hover:text-accent transition duration-300">Keahlian</a>
+                    <a href="#proyek" class="nav-link hover:text-accent transition duration-300">Proyek</a>
+                    <a href="#kontak" class="bg-accent text-dark-navy px-5 py-2 rounded-full font-bold hover:bg-white transition duration-300">Kontak</a>
+                </div>
+
+                <!-- Hamburger Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Side Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-dark-navy z-50 md:hidden flex flex-col items-center justify-center space-y-8 text-2xl">
+            <button id="close-btn" class="absolute top-6 right-6 text-white">
+                <i class="fa-solid fa-xmark text-3xl"></i>
+            </button>
+            <a href="#beranda" class="mobile-link hover:text-accent">Beranda</a>
+            <a href="#profil" class="mobile-link hover:text-accent">Profil</a>
+            <a href="#keahlian" class="mobile-link hover:text-accent">Keahlian</a>
+            <a href="#proyek" class="mobile-link hover:text-accent">Proyek</a>
+            <a href="#kontak" class="mobile-link hover:text-accent">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="min-h-screen flex items-center bg-dark-navy text-white pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-accent font-semibold tracking-widest mb-4">HALO, SAYA</p>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">Athiyyah Mughniy <br>Al Ghifary</h1>
+                    <p class="text-xl text-slate-300 mb-8 max-w-lg">
+                        Lulusan Teknik Informatika (Software Engineering) yang berdedikasi tinggi dengan pengalaman 4 tahun di industri profesional.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#kontak" class="bg-accent text-dark-navy px-8 py-4 rounded-lg font-bold hover:scale-105 transition transform">Hubungi Saya</a>
+                        <a href="#proyek" class="border border-white/30 px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition">Lihat Karya</a>
+                    </div>
+                </div>
+                <div class="hidden md:block relative">
+                    <div class="w-full h-[500px] bg-accent/20 rounded-2xl overflow-hidden border-2 border-accent/30 shadow-2xl">
+                        <img src="image/IMG_20260406_153531_969@891993235.jpg" alt="Foto Athiyyah" class="w-100 h-100 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profil" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Profil Profesional</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1">
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 h-full text-center">
+                        <i class="fa-solid fa-graduation-cap text-5xl text-accent mb-6"></i>
+                        <h3 class="text-xl font-bold mb-2">Pendidikan</h3>
+                        <p class="font-semibold text-dark-navy">Universitas Raharja</p>
+                        <p class="text-slate-500 italic mb-4">Teknik Informatika (S1)</p>
+                        <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-bold">IPK 3.53 - Cum Laude</span>
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Tentang Saya</h3>
+                    <p class="text-lg text-slate-600 mb-6">
+                        Saya adalah seorang profesional yang menggabungkan kemampuan teknis di bidang Rekayasa Piranti Lunak dengan keterampilan komunikasi yang kuat. Sebagai lulusan Sarjana yang menempuh pendidikan sambil bekerja penuh waktu, saya memiliki ketahanan kerja dan manajemen waktu yang sangat baik.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8">
+                        Fokus utama saya adalah pengembangan web dan manajemen basis data. Saya memiliki dedikasi untuk menciptakan solusi digital yang efisien dan berorientasi pada pengguna.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent"></i>
+                            <span class="font-semibold">Cepat Belajar</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent"></i>
+                            <span class="font-semibold">Teliti & Akurat</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent"></i>
+                            <span class="font-semibold">Problem Solver</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-accent"></i>
+                            <span class="font-semibold">Kerjasama Tim</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="keahlian" class="section-padding bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Keahlian Teknis</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-dark-navy text-accent rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                    <p class="text-slate-600">Mahir dalam HTML5 dan CSS3 untuk membangun struktur dan desain web yang responsif.</p>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-dark-navy text-accent rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Database Management</h3>
+                    <p class="text-slate-600">Pengalaman mengelola MySQL: perancangan database, query, dan integrasi backend.</p>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-14 h-14 bg-dark-navy text-accent rounded-lg flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">IT Support</h3>
+                    <p class="text-slate-600">Instalasi sistem, troubleshoot hardware/software, dan pengelolaan inventaris IT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyek" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Proyek Unggulan</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+
+            <div class="bg-dark-navy rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <!-- Container Utama Gambar (Setengah Layar) -->
+            <div class="md:w-1/2 p-4">
+                <!-- Grid System: 2 kolom di HP, 3 kolom di Desktop -->
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                    
+                    <!-- Ulangi tag img ini sampai 6 kali -->
+                    <img src="image/Screenshot 2025-07-22 070033.png" class="w-full h-32 object-cover rounded-lg shadow-md" alt="Proyek 1">
+                    <img src="image/Screenshot 2025-07-24 093835.png" class="w-full h-32 object-cover rounded-lg shadow-md" alt="Proyek 2">
+                    <img src="image/Screenshot 2025-07-24 093901.png" class="w-full h-32 object-cover rounded-lg shadow-md" alt="Proyek 3">
+                    <img src="image/Screenshot 2025-07-24 093925.png" class="w-full h-32 object-cover rounded-lg shadow-md" alt="Proyek 4">
+                    <img src="image/Screenshot 2025-07-24 093944.png" class="w-full h-32 object-cover rounded-lg shadow-md" alt="Proyek 5">
+                    <img src="image/Screenshot 2025-07-24 094432.png" class="w-full h-32 object-cover rounded-lg shadow-md" alt="Proyek 6">
+                    
+                </div>
+            </div>
+
+                <div class="md:w-1/2 p-10 md:p-16 flex flex-col justify-center text-white">
+                    <span class="text-accent font-bold mb-2">TUGAS AKHIR / SKRIPSI</span>
+                    <h3 class="text-3xl font-bold mb-6">Sistem Presensi Berbasis Web</h3>
+                    <p class="text-slate-300 text-lg mb-8">
+                        Aplikasi manajemen kehadiran yang dirancang untuk PT Hamfarab Haal Masa. Menggunakan HTML, CSS, PHP dan MySQL untuk mencatat dan mengolah data presensi karyawan secara efisien.
+                    </p>
+                    <div class="flex space-x-4">
+                        <span class="bg-white/10 px-4 py-2 rounded text-sm">HTML5</span>
+                        <span class="bg-white/10 px-4 py-2 rounded text-sm">CSS3</span>
+                        <span class="bg-white/10 px-4 py-2 rounded text-sm">PHP</span>
+                        <span class="bg-white/10 px-4 py-2 rounded text-sm">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section-padding bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-8">Pengalaman Kerja</h2>
+                    <div class="space-y-8 border-l-4 border-accent pl-8">
+                        <div>
+                            <h3 class="text-xl font-bold">Crew Restaurant</h3>
+                            <p class="text-accent font-semibold">Meatime Steak (2021 - 2025)</p>
+                            <p class="text-slate-600 mt-2">
+                                Mengelola operasional harian, sistem POS (Point of Sale), laporan keuangan digital, dan memastikan kepuasan pelanggan di lingkungan yang dinamis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 rounded-2xl overflow-hidden shadow-lg h-64 md:h-96">
+                    <img src="image/IMG20230130221944.jpg" alt="Pengalaman Kerja" class="w-100 h-100 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="section-padding bg-dark-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Mari Mulai Bekerja Sama</h2>
+            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
+                Saya sedang mencari peluang karir di bidang IT Support, Web Development, atau administrasi sistem. Hubungi saya melalui saluran di bawah ini.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="https://mailto:athiyyahmughniy18@gmail.com" class="p-8 bg-white/5 rounded-2xl hover:bg-white/10 transition border border-white/10">
+                    <i class="fa-solid fa-envelope text-accent text-3xl mb-4"></i>
+                    <h4 class="font-bold">Email</h4>
+                    <p class="text-sm text-slate-400 mt-2">athiyyahmughniy18@gmail.com</p>
+                </a>
+                <a href="https://wa.me/6282297159718" target="_blank"  class="p-8 bg-white/5 rounded-2xl hover:bg-white/10 transition border border-white/10">
+                    <i class="fa-solid fa-phone text-accent text-3xl mb-4"></i>
+                    <h4 class="font-bold">Telepon</h4>
+                    <p class="text-sm text-slate-400 mt-2">0822-9715-9718</p>
+                </a>
+                <a href="https://instagram.com/athiyyah_m" target="_blank" class="p-8 bg-white/5 rounded-2xl hover:bg-white/10 transition border border-white/10">
+                    <i class="fa-brands fa-instagram text-accent text-3xl mb-4"></i>
+                    <h4 class="font-bold">Instagram</h4>
+                    <p class="text-sm text-slate-400 mt-2">@athiyyah_m</p>
+                </a>
+                <div class="p-8 bg-white/5 rounded-2xl border border-white/10">
+                    <a href="https://maps.app.goo.gl/XdQAGtsbb9xus9nNA" target="_blank" class="group flex flex-col items-center transition-all duration-300">
+                        <i class="fa-solid fa-location-dot text-accent text-3xl mb-4"></i>
+                    </a>
+                    <h4 class="font-bold">Lokasi</h4>
+                    <p class="text-sm text-slate-400 mt-2">Kota Tangerang, Banten</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-200 text-center text-slate-500">
+        <p>© 2025 Athiyyah Mughniy Al Ghifary.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('overflow-hidden');
+        };
+
+        menuBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.classList.remove('overflow-hidden');
+            });
+        });
+    </script>
+</body>
+</html>
